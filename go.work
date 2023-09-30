@@ -3,7 +3,7 @@ go 1.21.1
 use (
 	./datatypes
 	./functions
-	./helloworld
+	./hello_world
 	./output
 	./variables
 )
