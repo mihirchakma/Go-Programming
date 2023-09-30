@@ -3,5 +3,6 @@ go 1.21.1
 use (
 	./functions
 	./helloworld
+	./output
 	./variables
 )
