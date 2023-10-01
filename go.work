@@ -4,6 +4,7 @@ use (
 	./datatypes
 	./functions
 	./hello_world
+	./operators
 	./output
 	./variables
 )
