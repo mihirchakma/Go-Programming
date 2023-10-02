@@ -11,7 +11,7 @@ func double(x int) int {
 }
 
 func greet()  {
-	fmt.Println("Hello from greet function")
+	fmt.Println("Hello, from Greet Function")
 }
 
 func main()  {
