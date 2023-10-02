@@ -7,5 +7,6 @@ use (
 	./if-else
 	./operators
 	./output
+	./switch
 	./variables
 )
