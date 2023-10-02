@@ -1,10 +1,10 @@
 go 1.21.1
 
 use (
-	./conditions
 	./datatypes
 	./functions
 	./hello_world
+	./if-else
 	./operators
 	./output
 	./variables
