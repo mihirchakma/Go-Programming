@@ -2,6 +2,17 @@ package main
 
 import "fmt"
 
+// create a function that return 1
+func price() int {
+	return 1
+}
+
+const (
+	Economy    = 0
+	Business   = 1
+	FirstClass = 2
+)
+
 func main() {
 
 	day := 4
@@ -36,7 +47,30 @@ func main() {
 	case 6,7:
 	 fmt.Println("Weekend")
    default:
-	 fmt.Println("Invalid day of day number")
+	 fmt.Println("Invalid day of day number.")
+   }
+
+
+   //* From ZTM course
+   switch p := price(); {
+   case p < 2:
+		fmt.Println("Cheap item")
+	case p < 10:
+		fmt.Println("Moderately priced item")
+	default:
+		fmt.Println("Expensive item")
+   }
+
+   ticket := Economy
+
+   switch ticket {
+   case Economy:
+		fmt.Println("Economy seating")
+	case Business:
+		fmt.Println("Business seating")
+	case FirstClass:
+		fmt.Println("FirstClass seating")
    }
    
 }
+
