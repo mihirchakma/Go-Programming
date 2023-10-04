@@ -5,6 +5,7 @@ use (
 	./functions
 	./hello_world
 	./if-else
+	./loops
 	./operators
 	./output
 	./switch
