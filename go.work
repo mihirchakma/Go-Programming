@@ -8,6 +8,7 @@ use (
 	./loops
 	./operators
 	./output
+	./sr-dice
 	./switch
 	./variables
 )
