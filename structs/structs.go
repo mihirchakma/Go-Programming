@@ -11,7 +11,7 @@ type Person struct {
 
 func main() {
 
-	// Access Person Struct Members
+	//* Access Person Struct Members
 	per1 := Person{"Mihir", 25, "London"}
 	fmt.Println("Name:", per1.name)
 	fmt.Println("Age:", per1.age)
@@ -20,9 +20,10 @@ func main() {
 	per2 := Person {name: "Lisa", age: 24, city: "Wales"}
 	fmt.Println(per2.name, per2.age, per2.city)
 
-	fmt.Println("------------------")
+	fmt.Println("--------------------")
 
-	// Passenger
+
+	//* Create a passenger object
 	ayaan := Passenger {"Ayaan", 1, false}
 	fmt.Println(ayaan)
 
@@ -54,12 +55,14 @@ func main() {
 
 }
 
+//* declare Passenger struct 
 type Passenger struct {
 	Name string
 	TicketNumber int
 	Boarded bool
 }
 
+// delcare Bus struct and struct representing the Passenger
 type Bus struct {
 	FrontSeat Passenger
 }
