@@ -9,6 +9,7 @@ use (
 	./operators
 	./output
 	./sr-dice
+	./structs
 	./switch
 	./variables
 )
