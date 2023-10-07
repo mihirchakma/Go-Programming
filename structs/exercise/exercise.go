@@ -43,6 +43,7 @@ func area(rect Rectangle) int {
 	return length(rect) * width(rect)
 }
 
+//  - The functions must use the rectangle structure as the function parameter
 func perimeter(rect Rectangle) int {
 	return (width(rect) * 2) + (length(rect) * 2)
 }
@@ -59,7 +60,6 @@ func main() {
 	//  - Print the new results to the terminal
 	printInfo(rect)
 
-	//  - The functions must use the rectangle structure as the function parameter
 	//* After performing the above requirements, double the size
 	//  of the existing rectangle and repeat the calculations
 	rect.a.y *= 2
