@@ -46,4 +46,42 @@ func main() {
 		item := myArray[i]
 		fmt.Println(item)
 	}
+
+
+	// ZTM 
+	rooms := [...] Room {
+		{name: "Office"},
+		{name: "Warhouse"},
+		{name: "Reception"},
+		{name: "Ops"},
+	}
+
+	// calling function 
+	checkCleanliness(rooms)
+
+	fmt.Println("Performing cleaning...")
+
+	rooms[1].cleaned = true
+	rooms[2].cleaned = true
+	rooms[3].cleaned = true
+
+	checkCleanliness(rooms)
+
+}
+
+// ZTM 
+type Room struct {
+	name string
+	cleaned bool
+}
+
+func checkCleanliness(rooms[4] Room) {
+	for i := 0; i < len(rooms); i++ {
+		room := rooms[i]
+		if room.cleaned {
+			fmt.Println(room.name, "is clean")
+		} else {
+			fmt.Println(room.name, "is dirty")
+		}
+	}
 }
