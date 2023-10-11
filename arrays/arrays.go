@@ -26,13 +26,21 @@ func main() {
 	fmt.Println(cars[1])
 	fmt.Println(cars[3])
 
-	// declare an array and print through in for loop  
-	myArray := [...] int {10, 20, 30, 40}
-
 	// Change Elements of an Array
 	prices := [3] int {10, 20, 30}
 	prices[2] = 40 // change the 30 (index[2]) to 40 
 	fmt.Println(prices)
+
+
+	//* Array Initialization
+	nArr1 := [5]int{} //not initialized
+	nArr2 := [5]int{1,2} //partially initialized
+	nArr3 := [5]int{1,2,3,4,5} //fully initialized
+
+	fmt.Println(nArr1, nArr2, nArr3)
+
+	// declare an array and print through in for loop using len() function 
+	myArray := [...] int {10, 20, 30, 40}
 
 	for i := 0; i < len(myArray); i ++ {
 		item := myArray[i]
