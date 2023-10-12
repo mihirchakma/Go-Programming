@@ -10,6 +10,7 @@ use (
 	./loops
 	./operators
 	./output
+	./slices
 	./sr-dice
 	./structs
 	./switch
