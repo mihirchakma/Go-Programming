@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt" 
+	"slices"
+)
 
 func main() {
 
@@ -58,5 +61,19 @@ func main() {
 
 	l := s[2:5]
     fmt.Println("sl1:", l)
+
+	l = s[:5]
+    fmt.Println("sl2:", l)
+
+	l = s[2:]
+    fmt.Println("sl3:", l)
+
+	t := []string {"g", "h", "i"}
+    fmt.Println("declare:", t)
+
+	t2 := []string{"g", "h", "i"}
+    if slices.Equal(t, t2) {
+        fmt.Println("t == t2")
+    }
 
 }
