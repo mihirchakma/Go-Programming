@@ -37,6 +37,10 @@ func main() {
 
 	fmt.Println("-----------------------------")
 
+
+	
+	//* Go by Example: Slices 
+
 	var s []string
     fmt.Println("uninit:", s, s == nil, len(s) == 0)
 
@@ -75,5 +79,40 @@ func main() {
     if slices.Equal(t, t2) {
         fmt.Println("t == t2")
     }
+
+	twoD := make([][]int, 3)
+    for i := 0; i < 3; i++ {
+        innerLen := i + 1
+        twoD[i] = make([]int, innerLen)
+        for j := 0; j < innerLen; j++ {
+            twoD[i][j] = i + j
+        }
+    }
+    fmt.Println("2d: ", twoD)
+	fmt.Println()
+
+
+
+	//* Slice Syntax Example
+
+	numbers := [...] int {1,2,3,4}
+
+	slice1 := numbers[:]
+
+	slice2 := numbers[1:]
+	slice3 := slice2[:1]
+
+	slice4 := numbers[:2]
+
+	slice5 := numbers[1:3]
+
+	// slice6 := numbers[1:6] //* error of length array 
+
+	fmt.Println(slice1)
+	fmt.Println(slice2)
+	fmt.Println(slice3)
+	fmt.Println(slice4)
+	fmt.Println(slice5)
+	// fmt.Println(slice6)
 
 }
