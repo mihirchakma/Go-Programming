@@ -34,6 +34,28 @@ func main() {
 	fmt.Println("Length =",len(mySlice4))
 	fmt.Println("Capacity =",cap(mySlice4))
 
+	// Append One Slice To Another Slice 
+	myslice1 := []int{1,2,3}
+	myslice2 := []int{4,5,6}
+	myslice3 := append(myslice1, myslice2...)
+
+	fmt.Printf("myslice3 = %v\n", myslice3)
+	fmt.Printf("length = %d\n", len(myslice3))
+	fmt.Printf("capacity = %d\n", cap(myslice3))
+
+	// copy() function
+	numbers1 := []int {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+
+	// Original slice
+	fmt.Printf("numbers = %v\n", numbers1)
+
+	// Create copy with only needed numbers
+	neededNumbers := numbers1[:len(numbers1) - 10]
+	numbersCopy := make([]int, len(neededNumbers))
+	copy(numbersCopy, neededNumbers)
+
+	fmt.Printf("numbersCopy = %v\n", numbersCopy) // print copy numbers 
+
 	fmt.Println("-----------------------------")
 
 
@@ -92,7 +114,7 @@ func main() {
 
 
 
-	//* Slice Syntax Example
+	//* Slice Syntax Example - ZTM
 
 	numbers := [...] int {1,2,3,4}
 
