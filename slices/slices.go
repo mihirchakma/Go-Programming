@@ -7,7 +7,6 @@ import (
 
 func main() {
 
-
 	//* Syntax: slice_name := [] datatype {values}
 	mySlice1 := [] int {10, 20, 30}
 	fmt.Println(mySlice1)
@@ -115,7 +114,7 @@ func main() {
 	fmt.Println(slice5)
 	// fmt.Println(slice6)
 
-	
+
 	//* ZTM 
 	route := []string {"Grocery", "Department Store", "Salon"}
 	printSlice("Route 1", route)
