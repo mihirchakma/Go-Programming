@@ -49,6 +49,6 @@ func main() {
 	// Syntax: delete(map_name, key) 
 	delete(details, "Age")
 
-	fmt.Println("Age Deleted: ", details)
+	fmt.Println("Delete Age: ", details)
 
 }
