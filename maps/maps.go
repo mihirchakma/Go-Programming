@@ -25,4 +25,30 @@ func main() {
 	details["City"] = "Gampaha"
 
 	fmt.Printf("%v\n", details)
+
+	//* Create an Empty Map 
+	// Syntax: var a map[KeyType]ValueType
+	var a = make(map[string]string)
+	var b map[string]string
+
+	fmt.Println(a == nil)
+	fmt.Println(b == nil)
+
+	//* Access Map Elements
+	// Syntax: map_name[key] = value
+	fmt.Println(details["Name"])
+	fmt.Println(details["City"])
+
+	//* Update and Add Map Elements 
+	details["Age"] = "26" // Updating an element 
+	details["Study"] = "SLTC" // Adding an element 
+
+	fmt.Println(details)
+
+	//* Remove Element from Map 
+	// Syntax: delete(map_name, key) 
+	delete(details, "Age")
+
+	fmt.Println("Age Deleted: ", details)
+
 }
