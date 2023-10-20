@@ -6,6 +6,10 @@ import (
 
 func main() {
 
+	// Maps are used to store data values in key:value pairs
+	// an unordered and changeable collection, does not allow duplicates
+	// Maps hold references to an underlying hash table 
+
 	//* Create Maps Using var and := 
 	var car1 = map[string]string{"Brand": "BMW", "Model": "5", "Year": "1972"}
 	fmt.Printf("%v\n", car1)
@@ -50,5 +54,25 @@ func main() {
 	delete(details, "Age")
 
 	fmt.Println("Delete Age: ", details)
+
+
+
+	//* Maps as a Reference 
+	var m = map[string] string{"brand": "Ford", "model": "Mustang", "year": "1964"}
+	n := m
+
+	fmt.Println(m)
+	fmt.Println(n)
+
+	n["year"] = "1970"
+	fmt.Println("After change to n: ")
+
+	fmt.Println(m)
+	fmt.Println(n)
+
+	//* Iterate Over Maps through range 
+	for i, s := range m {
+		fmt.Println(i, s)
+	}
 
 }
