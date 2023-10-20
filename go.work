@@ -8,6 +8,7 @@ use (
 	./hello_world
 	./if-else
 	./loops
+	./maps
 	./operators
 	./output
 	./ranges
