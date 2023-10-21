@@ -75,4 +75,15 @@ func main() {
 		fmt.Println(i, s)
 	}
 
+
+	//* ZTM 
+	shoppingList := make(map[string]int)
+
+	shoppingList["eggs"] = 11
+	shoppingList["milk"] = 1
+	shoppingList["bread"] += 1
+
+	shoppingList["eggs"] += 1
+	fmt.Println(shoppingList)
+
 }
