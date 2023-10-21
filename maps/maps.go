@@ -78,9 +78,9 @@ func main() {
 	fmt.Println()
 
 
-	//* -----ZTM-----
+	//* -----ZTM----- * 
 	shoppingList := make(map[string]int)
-
+	// len(shoppingList)
 	shoppingList["eggs"] = 11
 	shoppingList["milk"] = 1
 	shoppingList["bread"] += 1
@@ -91,6 +91,21 @@ func main() {
 	delete(shoppingList, "milk")
 	fmt.Println("Milk deleted: ",shoppingList)
 
+	fmt.Println("Need",shoppingList["eggs"], "eggs")
 
+	cereal, found := shoppingList["cereal"]
+	fmt.Println("Need cereal?")
+
+	if !found {
+		fmt.Println("No")
+	} else {
+		fmt.Println("Yes", cereal, "boxes")
+	}
+
+	totalItems := 0
+	for _, amount := range shoppingList {
+		totalItems += amount
+	}
+	fmt.Println("There are", totalItems, "on the shopping list")
 
 }
