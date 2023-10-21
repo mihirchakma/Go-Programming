@@ -75,8 +75,10 @@ func main() {
 		fmt.Println(i, s)
 	}
 
+	fmt.Println()
 
-	//* ZTM 
+
+	//* -----ZTM-----
 	shoppingList := make(map[string]int)
 
 	shoppingList["eggs"] = 11
@@ -85,5 +87,10 @@ func main() {
 
 	shoppingList["eggs"] += 1
 	fmt.Println(shoppingList)
+
+	delete(shoppingList, "milk")
+	fmt.Println("Milk deleted: ",shoppingList)
+
+
 
 }
