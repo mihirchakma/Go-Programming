@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	// taking a normal variable 
+	x := 45
+	// declaration of pointer 
+	var p *int
+
+	// initialization of pointer 
+	p = &x
+
+	fmt.Println("Value stored in x : ", x)
+	fmt.Println("Address of x : ", &x)
+	fmt.Println("Value stored in variable p : ", p)
+}
